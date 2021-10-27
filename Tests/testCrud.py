@@ -1,5 +1,5 @@
 from Logic.CRUD import AdaugaObiectLista, StergereObiectLista, ModificareObiectLista, GetById
-from Domain.InventarObject import getId,getNume,getLocatie,getPretAchizitie,getDescriere
+from Domain.InventarObject import getId, getNume, getLocatie, getPretAchizitie, getDescriere
 
 def testAdaugaObiect():
     lista = []

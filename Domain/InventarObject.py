@@ -10,29 +10,30 @@ def CreazaObiect(ID, nume, descriere, pret_achizitie, locatie):
     
     Return: un dictionar cu specificatiile obiectului
     """
-    return {
-        "id" : ID,
-        "nume" : nume,
-        "descriere" : descriere,
-        "PretAchizitie" : pret_achizitie,
-        "locatie" : locatie
-    }
+
+    lista = []
+    lista.append(("id", ID))
+    lista.append(("nume", nume))
+    lista.append(("descriere", descriere))
+    lista.append(("PretAchizitie", float(pret_achizitie)))
+    lista.append(("locatie", locatie))
+    return lista
 
 def getId(obiect):
-    return obiect["id"]
+    return obiect[0][1]
 
 def getNume(obiect):
  
-    return obiect["nume"]
+    return obiect[1][1]
 
 def getDescriere(obiect):
-    return obiect["descriere"]
+    return obiect[2][1]
 
 def getPretAchizitie(obiect):
-    return obiect["PretAchizitie"]
+    return obiect[3][1]
 
 def getLocatie(obiect):
-    return obiect["locatie"]
+    return obiect[4][1]
 
 def toString(obiect):
     return "ID: {}, Nume: {}, Descriere: {}, PretAchizitie: {}, Locatie: {}".format(
@@ -42,7 +43,4 @@ def toString(obiect):
         getPretAchizitie(obiect),
         getLocatie(obiect)
     )
-
-
-
 

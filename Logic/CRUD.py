@@ -1,4 +1,6 @@
 from Domain.InventarObject import CreazaObiect, getId
+
+
 def AdaugaObiectLista(id, nume, descriere, pret_achizitie, locatie, lista):
     """Adauga un obiect intr-o lista data
 
