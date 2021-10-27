@@ -54,3 +54,16 @@ def testStergereObiect():
     assert GetById("1", lista) is None
     assert GetById("2", lista) is not None
 
+def testGetbyId():
+    lista = []
+    lista = AdaugaObiectLista("1", "televizor", "full hd", 1300, "zzhd", lista)
+    lista = AdaugaObiectLista("2", "frigider", "A+++", 600, "zjjd", lista)
+
+    assert GetById("2", lista) == lista[1]
+
+    lista = AdaugaObiectLista("3", "aragaza", "4 ochiuri", 750, "dgfd", lista)
+
+    assert GetById("1", lista) == lista[0]
+    assert GetById("3", lista) == lista[2]
+    assert GetById("4", lista) == None
+

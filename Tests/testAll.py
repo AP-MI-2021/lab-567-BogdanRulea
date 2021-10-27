@@ -1,4 +1,4 @@
-from Tests.testCrud import testAdaugaObiect,testModificareObiect,testStergereObiect
+from Tests.testCrud import testAdaugaObiect,testModificareObiect,testStergereObiect, testGetbyId
 from Tests.testDomain import testObiect
 
 def runAllTests():
@@ -6,3 +6,4 @@ def runAllTests():
     testAdaugaObiect()
     testModificareObiect()
     testStergereObiect()
+    testGetbyId()
