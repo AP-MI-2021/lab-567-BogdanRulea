@@ -8,7 +8,7 @@ def PrintMenu():
     print("4. Afisare obiecte din inventar.")
     print("5. Muta toate obiectele dintr-o locatie in alta.")
     print("6. Concateneaza descrierile cu un text dat al tuturor obiectelor cu pretul mai mare decat un pret dat.")
-    print("x. Program incheiat.")
+    print("x. Program incheiat/Sau schimba meniul.")
 
 
 def uiAdaugaObiect(lista):

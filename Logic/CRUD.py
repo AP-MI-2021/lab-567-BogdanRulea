@@ -12,9 +12,12 @@ def AdaugaObiectLista(id, nume, descriere, pret_achizitie, locatie, lista):
         locatie (4 chars): locatie obiect
         lista (list[int]): lista in care trebuie adaugat obiectul
     """
-    
-    ObiectNou = CreazaObiect(id, nume, descriere, pret_achizitie, locatie)
-    return lista + [ObiectNou]
+    if GetById(id,lista) == None:
+        ObiectNou = CreazaObiect(id, nume, descriere, pret_achizitie, locatie)
+        lista.append(ObiectNou)
+    else:
+        print("Deja exista un obiect cu id-ul dat, incearca din nou.")
+    return lista
 
 
 def GetById(id, lista):
