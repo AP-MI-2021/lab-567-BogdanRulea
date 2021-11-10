@@ -48,8 +48,6 @@ def testStergereObiect():
     assert GetById("1", lista) is None
     assert GetById("2", lista) is not None
 
-    lista = StergereObiectLista("3", lista)
-
     assert  len(lista) == 1
     assert GetById("1", lista) is None
     assert GetById("2", lista) is not None

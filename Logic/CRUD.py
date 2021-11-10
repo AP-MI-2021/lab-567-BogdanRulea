@@ -1,6 +1,5 @@
 from Domain.InventarObject import CreazaObiect, getId
 
-
 def AdaugaObiectLista(id, nume, descriere, pret_achizitie, locatie, lista):
     """Adauga un obiect intr-o lista data
 
@@ -12,12 +11,12 @@ def AdaugaObiectLista(id, nume, descriere, pret_achizitie, locatie, lista):
         locatie (4 chars): locatie obiect
         lista (list[int]): lista in care trebuie adaugat obiectul
     """
+    rezultat = lista
     if GetById(id,lista) == None:
         ObiectNou = CreazaObiect(id, nume, descriere, pret_achizitie, locatie)
-        lista.append(ObiectNou)
+        return lista + [ObiectNou]
     else:
-        print("Deja exista un obiect cu id-ul dat, incearca din nou.")
-    return lista
+       raise ValueError("Deja exista un obiect cu ID-ul dat.")
 
 
 def GetById(id, lista):
@@ -41,6 +40,9 @@ def StergereObiectLista(id, lista):
         id (integer): id obiect
         lista (list[int]): lista data
     """
+    if GetById(id, lista) is None:
+        raise ValueError("Obiectul cu ID-ul dat nu exista.")
+        return None
     return [obiect for obiect in lista if getId(obiect) != id]
 
 
@@ -59,7 +61,8 @@ def ModificareObiectLista(id, nume, descriere, pret_achizitie, locatie, lista):
         lista[int]: lista optinuta in urma modificarii obiectului
     """
     listaNoua = []
-
+    if GetById(id, lista) is None:
+        raise ValueError("Obiectul cu ID-l dat nu exista.")
     for obiect in lista:
         if getId(obiect) == id:
             ObiectNou = CreazaObiect(id, nume, descriere, pret_achizitie, locatie)

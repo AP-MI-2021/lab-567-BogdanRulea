@@ -9,22 +9,24 @@ def PrintMenu():
 def OneLineCommand(lista_comenzi,lista : list):
     lista_comenzi = lista_comenzi.split(";")
     i = 0
-    while i < len(lista_comenzi):
-        try:
-            if lista_comenzi[i] == 'add':
-                lista = AdaugaObiectLista(lista_comenzi[i+1],lista_comenzi[i+2],lista_comenzi[i+3],float(lista_comenzi[i+4]),lista_comenzi[i+5], lista)
-                i+=5
-            elif lista_comenzi[i] == 'delete':
-                lista = StergereObiectLista(lista_comenzi[i+1], lista)
-                i+=1
-            elif lista_comenzi[i] == 'showall':
-                uiShowAll(lista)
-            else:
-                print("Ai scris o comanda invalida")
-        except IndexError:
-            print("Nu ai adaugat suficienti parametrii.")
-        i+=1
-
+    try:
+        while i < len(lista_comenzi):
+            try:
+                if lista_comenzi[i] == 'add':
+                    lista = AdaugaObiectLista(lista_comenzi[i+1],lista_comenzi[i+2],lista_comenzi[i+3],float(lista_comenzi[i+4]),lista_comenzi[i+5], lista)
+                    i+=5
+                elif lista_comenzi[i] == 'delete':
+                    lista = StergereObiectLista(lista_comenzi[i+1], lista)
+                    i+=1
+                elif lista_comenzi[i] == 'showall':
+                    uiShowAll(lista)
+                else:
+                    print("Ai scris o comanda invalida")
+            except IndexError:
+                print("Nu ai adaugat suficienti parametrii.")
+            i+=1
+    except ValueError as ve:
+        print("Error: {}".format(ve))
     return lista
 
 def uiOneLineCommand(lista):

@@ -28,8 +28,8 @@ def ConcatenareDescriere(textNou, pret, lista):
     """
     listaNoua = lista
     for obiect in lista:
-        if getPretAchizitie(obiect) > pret:
-            listaNoua = ModificareObiectLista(getId(obiect), getNume(obiect), getDescriere(obiect) + textNou, getPretAchizitie(obiect),getLocatie(obiect), listaNoua)
+        if getPretAchizitie(obiect) > float(pret):
+            listaNoua = ModificareObiectLista(getId(obiect), getNume(obiect), (getDescriere(obiect) + textNou), getPretAchizitie(obiect),getLocatie(obiect), listaNoua)
     return listaNoua
 
 def CelMaiMarePretPerLocatie(lista):

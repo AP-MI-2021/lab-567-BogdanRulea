@@ -1,3 +1,4 @@
+
 def CreazaObiect(ID, nume, descriere, pret_achizitie, locatie):
     """Creare obiect
 

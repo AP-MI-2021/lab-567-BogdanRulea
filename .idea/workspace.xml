@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d67429c8-a831-4ecd-a464-a6da03a51fc7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/UserInterface/comman_line_console.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/InventarObject.py" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/InventarObject.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logic/CRUD.py" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/CRUD.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/testAll.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/testAll.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/testCrud.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/testCrud.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/testFunctionalitati.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/testFunctionalitati.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserInterface/console.py" beforeDir="false" afterPath="$PROJECT_DIR$/UserInterface/console.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -112,7 +115,11 @@
       <workItem from="1635348767395" duration="1788000" />
       <workItem from="1635756573323" duration="604000" />
       <workItem from="1635924374904" duration="4429000" />
-      <workItem from="1635956601758" duration="2172000" />
+      <workItem from="1635956601758" duration="3595000" />
+      <workItem from="1636528759517" duration="1647000" />
+      <workItem from="1636530800521" duration="9923000" />
+      <workItem from="1636541737171" duration="807000" />
+      <workItem from="1636546837763" duration="4000" />
     </task>
     <servers />
   </component>
@@ -132,8 +139,8 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/lab_567_BogdanRulea$main.coverage" NAME="main Coverage Results" MODIFIED="1635958744762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/lab_567_BogdanRulea$testFunctionalitati.coverage" NAME="testFunctionalitati Coverage Results" MODIFIED="1635926171439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tests" />
+    <SUITE FILE_PATH="coverage/lab_567_BogdanRulea$main.coverage" NAME="main Coverage Results" MODIFIED="1636543745797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lab_567_BogdanRulea$testFunctionalitati.coverage" NAME="testFunctionalitati Coverage Results" MODIFIED="1636533407118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tests" />
     <SUITE FILE_PATH="coverage/lab_567_BogdanRulea$testCrud.coverage" NAME="testCrud Coverage Results" MODIFIED="1635350271505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tests" />
   </component>
 </project>
